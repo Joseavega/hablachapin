@@ -65,7 +65,22 @@ def guardar_refresh(refresh):
     subprocess.run(["gh", "secret", "set", "TIKTOK_REFRESH_TOKEN", "--body", refresh], check=True)
 
 
+def revisar_permiso_github():
+    """Comprueba que GH_PAT puede guardar secretos antes de gastar el código de TikTok."""
+    r = subprocess.run(
+        ["gh", "api", f"repos/{os.environ['GH_REPO']}/actions/secrets/public-key", "--jq", ".key_id"],
+        capture_output=True, text=True,
+    )
+    if r.returncode != 0:
+        sys.exit(
+            "GH_PAT no puede guardar secretos en el repositorio. Editá el token en GitHub: "
+            "Repository access → hablachapin, y Permissions → Secrets → Read and write. "
+            "El código de TikTok no se usó, así que sigue sirviendo si no ha vencido."
+        )
+
+
 def autorizar():
+    revisar_permiso_github()
     codigo = os.environ["TIKTOK_CODE"].strip()
     # Acepta el código solo o la dirección completa copiada de la barra
     if "code=" in codigo:
