@@ -12,6 +12,10 @@ on:
         description: "Generar el video sin publicarlo"
         type: boolean
         default: true
+      autorizar_tiktok:
+        description: "Conectar TikTok con el secreto TIKTOK_CODE (no publica nada)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -39,9 +43,25 @@ jobs:
           test -n "$nuevo" && test "$nuevo" != null
           gh secret set IG_TOKEN --body "$nuevo"
 
-  publicar:
-    if: github.event.schedule != '41 7 * * 1'
+  autorizar-tiktok:
+    if: github.event_name == 'workflow_dispatch' && inputs.autorizar_tiktok
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cambiar el código por el acceso de TikTok
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_CODE: ${{ secrets.TIKTOK_CODE }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+        run: python tiktok.py autorizar
+
+  publicar:
+    if: github.event.schedule != '41 7 * * 1' && !(github.event_name == 'workflow_dispatch' && inputs.autorizar_tiktok)
+    runs-on: ubuntu-latest
+    env:
+      HAY_TIKTOK: ${{ secrets.TIKTOK_REFRESH_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -93,6 +113,18 @@ jobs:
           git commit -m "Publicado un día"
           git push
           gh release delete "$etiqueta" --cleanup-tag --yes
+
+      - name: Mandar borrador a TikTok
+        if: (github.event_name != 'workflow_dispatch' || !inputs.solo_generar) && env.HAY_TIKTOK == 'true'
+        # Si TikTok falla, Instagram ya quedó publicado y no se marca como error
+        continue-on-error: true
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+        run: python tiktok.py subir salida/*.mp4
 
       - name: Borrar el video público si algo falló
         if: failure()
