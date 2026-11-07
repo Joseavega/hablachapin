@@ -68,7 +68,7 @@ def siguiente():
 def main():
     i, hechos, quedan = siguiente()
     nombre = f"dia-{i + 1:03d}.mp4"
-    e, _ = generar.generar(i, RAIZ / "salida" / nombre)
+    e, _, portada = generar.generar(i, RAIZ / "salida" / nombre)
     print(f"Generado {nombre}: {e['palabra']} (quedan {quedan})")
     if os.environ.get("SOLO_GENERAR") == "1":
         return
@@ -77,7 +77,7 @@ def main():
     ig_id = config.get("ig_user_id") or llamar("GET", "me", fields="user_id")["user_id"]
     contenedor = llamar(
         "POST", f"{ig_id}/media", media_type="REELS", video_url=url,
-        caption=texto(e, config, i + 1), share_to_feed="true", thumb_offset="1500",
+        caption=texto(e, config, i + 1), share_to_feed="true", thumb_offset=str(portada),
         is_ai_generated="true",
     )["id"]
     for _ in range(10):

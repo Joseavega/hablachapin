@@ -533,7 +533,8 @@ def generar(indice, salida):
         )
         salida.parent.mkdir(parents=True, exist_ok=True)
         os.replace(f, salida)
-    return g, plan.duracion
+    pop = next((f["t0"] for f in plan.frases if f["ilu"] == "__pop__"), 0.0)
+    return g, plan.duracion, int((pop + 0.6) * 1000)
 
 
 def cuadros_prueba(indice, tiempos_ver, carpeta):
