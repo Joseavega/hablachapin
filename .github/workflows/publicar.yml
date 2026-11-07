@@ -1,0 +1,96 @@
+name: Publicar Reel
+
+on:
+  schedule:
+    # Todos los días a las 12:17 de Guatemala (18:17 UTC)
+    - cron: "17 18 * * *"
+    # Renueva el token de Instagram cada lunes
+    - cron: "41 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      solo_generar:
+        description: "Generar el video sin publicarlo"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency: publicar
+
+jobs:
+  renovar-token:
+    if: github.event.schedule == '41 7 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renovar token
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          nuevo=$(curl -sS --fail -G https://graph.instagram.com/refresh_access_token \
+            --data-urlencode grant_type=ig_refresh_token \
+            --data-urlencode "access_token=$IG_TOKEN" | jq -r .access_token)
+          echo "::add-mask::$nuevo"
+          test -n "$nuevo" && test "$nuevo" != null
+          gh secret set IG_TOKEN --body "$nuevo"
+
+  publicar:
+    if: github.event.schedule != '41 7 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar herramientas
+        run: |
+          sudo apt-get update -q && sudo apt-get install -yq ffmpeg libegl1 libgl1 libfontconfig1
+          pip install numpy skia-python kokoro-onnx soundfile
+      - name: Recuperar la voz
+        uses: actions/cache@v4
+        with:
+          path: modelo
+          key: kokoro-v1.0
+      - name: Descargar la voz si falta
+        run: |
+          mkdir -p modelo
+          base=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+          [ -f modelo/kokoro-v1.0.onnx ] || curl -fsSL -o modelo/kokoro-v1.0.onnx $base/kokoro-v1.0.onnx
+          [ -f modelo/voices-v1.0.bin ] || curl -fsSL -o modelo/voices-v1.0.bin $base/voices-v1.0.bin
+
+      - name: Generar sin publicar
+        if: github.event_name == 'workflow_dispatch' && inputs.solo_generar
+        env:
+          SOLO_GENERAR: "1"
+        run: python publicar.py
+      - name: Guardar el video de prueba
+        if: github.event_name == 'workflow_dispatch' && inputs.solo_generar
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-de-prueba
+          path: salida/*.mp4
+
+      - name: Preparar el video público y publicar
+        if: github.event_name != 'workflow_dispatch' || !inputs.solo_generar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          SOLO_GENERAR: "1"
+        run: |
+          python publicar.py
+          etiqueta="videos-${GITHUB_RUN_ID}"
+          gh release create "$etiqueta" salida/*.mp4 --title "$etiqueta" --notes "Video para Instagram"
+          url="https://github.com/${GITHUB_REPOSITORY}/releases/download/$etiqueta"
+          SOLO_GENERAR=0 VIDEO_URL_BASE="$url" python publicar.py
+          git config user.name "hablachapin-bot"
+          git config user.email "hablachapin-bot@users.noreply.github.com"
+          git add publicados.json
+          git commit -m "Publicado un día"
+          git push
+          gh release delete "$etiqueta" --cleanup-tag --yes
+
+      - name: Avisar si falla
+        if: failure()
+        run: echo "::error::La publicación falló. Revisá el registro de esta ejecución."
