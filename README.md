@@ -11,5 +11,5 @@ Publica un Reel narrado cada día sobre el origen de las palabras de Guate.
 
 - `publicar.py`: publica en Instagram.
 
-Secretos del repositorio: `IG_TOKEN` y `GH_PAT`.
+Secreto del repositorio: `IG_TOKEN`. `GH_PAT` es opcional: solo hace falta si el token de Instagram caduca y hay que renovarlo.
 Las fuentes Archivo Black y Poppins tienen licencia SIL Open Font.

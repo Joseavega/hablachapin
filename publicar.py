@@ -64,7 +64,7 @@ def main():
         return
     config = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
     url = os.environ["VIDEO_URL_BASE"].rstrip("/") + "/" + nombre
-    ig_id = llamar("GET", "me", fields="user_id")["user_id"]
+    ig_id = config.get("ig_user_id") or llamar("GET", "me", fields="user_id")["user_id"]
     contenedor = llamar(
         "POST", f"{ig_id}/media", media_type="REELS", video_url=url,
         caption=texto(e, config, i + 1), share_to_feed="true", thumb_offset="1500",

@@ -24,6 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Renovar token
+        # El token de la API unificada no caduca; esto solo corre si existe GH_PAT
+        if: env.GH_TOKEN != ''
+        continue-on-error: true
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
