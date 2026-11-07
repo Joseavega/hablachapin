@@ -94,6 +94,12 @@ jobs:
           git push
           gh release delete "$etiqueta" --cleanup-tag --yes
 
+      - name: Borrar el video público si algo falló
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release delete "videos-${GITHUB_RUN_ID}" --cleanup-tag --yes || true
+
       - name: Avisar si falla
         if: failure()
         run: echo "::error::La publicación falló. Revisá el registro de esta ejecución."

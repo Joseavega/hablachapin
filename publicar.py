@@ -18,14 +18,24 @@ from pathlib import Path
 import generar
 
 RAIZ = Path(__file__).resolve().parent
-API = "https://graph.instagram.com/v23.0"
+VERSION = "v23.0"
+
+
+def api():
+    """Los tokens de Instagram (IG...) van a graph.instagram.com; los de Facebook (EAA...) a graph.facebook.com."""
+    host = "graph.instagram.com" if token().startswith("IG") else "graph.facebook.com"
+    return f"https://{host}/{VERSION}"
+
+
+def token():
+    return os.environ["IG_TOKEN"].strip().strip('"').strip("'")
 ESTADO = RAIZ / "publicados.json"
 
 
 def llamar(metodo, ruta, **datos):
-    datos["access_token"] = os.environ["IG_TOKEN"]
+    datos["access_token"] = token()
     cuerpo = urllib.parse.urlencode(datos)
-    url = f"{API}/{ruta}"
+    url = f"{api()}/{ruta}"
     if metodo == "GET":
         req = urllib.request.Request(f"{url}?{cuerpo}")
     else:
