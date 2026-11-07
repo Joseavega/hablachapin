@@ -52,7 +52,8 @@ def tokens(**extra):
     r = pedir("POST", f"{API}/oauth/token/", datos, form=True)
     if "access_token" not in r:
         # Nunca se imprime ningún token, solo el error
-        sys.exit(f"TikTok no entregó el acceso: {r.get('error')} {r.get('error_description')}")
+        detalle = {k: r.get(k) for k in ("error", "error_description", "log_id")}
+        sys.exit(f"TikTok no entregó el acceso: {detalle}")
     if "video.upload" not in r.get("scope", ""):
         sys.exit("La autorización no incluye el permiso video.upload")
     return r["access_token"], r["refresh_token"]
@@ -65,7 +66,12 @@ def guardar_refresh(refresh):
 
 
 def autorizar():
-    codigo = urllib.parse.unquote(os.environ["TIKTOK_CODE"].strip())
+    codigo = os.environ["TIKTOK_CODE"].strip()
+    # Acepta el código solo o la dirección completa copiada de la barra
+    if "code=" in codigo:
+        codigo = urllib.parse.parse_qs(urllib.parse.urlparse(codigo).query or codigo.split("?", 1)[-1])["code"][0]
+    else:
+        codigo = urllib.parse.unquote(codigo.split("&")[0])
     _, refresh = tokens(code=codigo, grant_type="authorization_code", redirect_uri=REDIRECT_URI)
     guardar_refresh(refresh)
     print("TikTok autorizado. Ya podés borrar el secreto TIKTOK_CODE.")
