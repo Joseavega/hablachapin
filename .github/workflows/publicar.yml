@@ -16,6 +16,10 @@ on:
         description: "Conectar TikTok con el secreto TIKTOK_CODE (no publica nada)"
         type: boolean
         default: false
+      probar_tiktok:
+        description: "Mandar el Día 1 a TikTok como borrador de prueba (no toca Instagram)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -83,8 +87,20 @@ jobs:
           [ -f modelo/kokoro-v1.0.onnx ] || curl -fsSL -o modelo/kokoro-v1.0.onnx $base/kokoro-v1.0.onnx
           [ -f modelo/voices-v1.0.bin ] || curl -fsSL -o modelo/voices-v1.0.bin $base/voices-v1.0.bin
 
+      - name: Probar TikTok con el Día 1
+        if: github.event_name == 'workflow_dispatch' && inputs.probar_tiktok
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python generar.py 0 salida/dia-001.mp4
+          python tiktok.py subir salida/dia-001.mp4
+
       - name: Generar sin publicar
-        if: github.event_name == 'workflow_dispatch' && inputs.solo_generar
+        if: github.event_name == 'workflow_dispatch' && inputs.solo_generar && !inputs.probar_tiktok
         env:
           SOLO_GENERAR: "1"
         run: python publicar.py
