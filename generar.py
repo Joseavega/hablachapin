@@ -31,6 +31,7 @@ SECCIONES = [
     ("historia", "UN POCO DE HISTORIA"),
     ("uso", "CÓMO LA USAMOS HOY"),
     ("remate", ""),
+    ("cierre", ""),
 ]
 PAUSA = 0.35
 ENTRA_PALABRA = 0.22
@@ -134,15 +135,16 @@ class Plan:
         destacar = {limpia(w) for w in g.get("destacar", [])} | {limpia(g["palabra"])}
         self.frases, self.secciones = [], []
         t = 0.0
-        intro_txt = [
-            f"Día {dia} contándote de dónde vienen las palabras que todos usamos en Guate,",
-            "hasta llegar a 1 millón de seguidores.",
-            f"Hoy: {g['palabra']}.",
-        ]
+        # Los datos: la gente se iba en la intro larga. Ahora arranca con el gancho y la palabra,
+        # y lo del millón queda como cierre.
+        cierre_txt = [f"Día {dia}, de camino a 1 millón de seguidores.", "Seguime para la palabra de mañana."]
         for i, ((clave, nombre), dur) in enumerate(zip(SECCIONES, tiempos)):
-            partes = intro_txt if clave == "intro" else trozos(g[clave])
             if clave == "intro":
-                partes = [q for p in partes for q in trozos(p, 52)]
+                partes = trozos(gancho(g), 52)
+            elif clave == "cierre":
+                partes = [q for p in cierre_txt for q in trozos(p, 52)]
+            else:
+                partes = trozos(g[clave])
             paleta = PALETAS[(dia * 3 + i * 2 + (i > 2)) % len(PALETAS)]
             self.secciones.append(dict(clave=clave, nombre=nombre, t0=t, t1=t + dur, paleta=paleta))
             total = sum(len(p) + 4 for p in partes)
@@ -159,8 +161,9 @@ class Plan:
                     acum += len(w) + 1
                 nombre_ilu = ilus[min(k, len(ilus) - 1)] if ilus else None
                 if clave == "intro":
-                    es_pop = p.startswith("Hoy") or limpia(p) == limpia(g["palabra"])
-                    nombre_ilu = "__pop__" if es_pop else "__contador__"
+                    nombre_ilu = "__pop__"
+                elif clave == "cierre":
+                    nombre_ilu = "__contador__"
                 self.frases.append(
                     dict(t0=cursor, t1=cursor + d, palabras=palabras, ilu=nombre_ilu, seccion=i, texto=p)
                 )
@@ -175,6 +178,10 @@ class Plan:
         for f in self.frases:
             f["ilu_t0"] = previa["ilu_t0"] if previa and previa["ilu"] == f["ilu"] else f["t0"]
             previa = f
+        # La palabra ya está completa en el primer cuadro (y en la miniatura)
+        for f in self.frases:
+            if f["ilu"] == "__pop__":
+                f["ilu_t0"] = -0.4
 
     @staticmethod
     def _dest(w, destacar):
@@ -292,7 +299,7 @@ class Render:
         c = self.c
         tl = t - f["ilu_t0"]
         if f["ilu"] == "__contador__":
-            self.contador(pal, t, self.plan.frases[0])
+            self.contador(pal, t, next(x for x in self.plan.frases if x["ilu"] == "__contador__"))
         elif f["ilu"] == "__pop__":
             c.save()
             c.translate(ILU_X, ILU_Y)
@@ -379,7 +386,7 @@ class Render:
         if sec == 4:
             self.confeti(pal, t, s["t0"])
         self.texto(f, pal, t, sec)
-        if sec == 4:
+        if sec == len(self.plan.secciones) - 1:
             k = suave((t - (self.plan.duracion - 1.1)) / 0.3)
             if k > 0:
                 self.p.setColor(pal[2])
@@ -473,7 +480,7 @@ def efectos(plan, salida):
     for s in plan.secciones[1:]:
         i = int(s["t0"] * SR)
         x[i : i + n] += soplo
-    t = plan.secciones[-1]["t0"]
+    t = plan.secciones[4]["t0"]
     for k, semi in enumerate((0, 4, 7, 12, 16, 19, 24)):
         s = nota_marimba(523.25 * 2 ** (semi / 12), 0.6, 0.7)
         i = int((t + k * 0.055) * SR)
@@ -502,15 +509,17 @@ def narrar(segmentos, voz, carpeta):
     return ruta, tiempos
 
 
+def gancho(g):
+    """Primera frase del video: tiene que nombrar la palabra en los primeros segundos."""
+    return g.get("gancho") or f"¿Sabés de dónde viene la palabra {g['palabra']}?"
+
+
 def preparar(indice):
     guiones = json.loads((RAIZ / "guiones.json").read_text(encoding="utf-8"))
     config = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
     g = guiones[indice]
-    intro = (
-        f"Día {numero(indice + 1)} contándote de dónde vienen las palabras que todos usamos en Guate, "
-        f"hasta llegar a un millón de seguidores. Hoy: {g['palabra']}."
-    )
-    return g, config, [intro, g["origen"], g["historia"], g["uso"], g["remate"]]
+    cierre = f"Día {numero(indice + 1)}, de camino a un millón de seguidores. Seguime para la palabra de mañana."
+    return g, config, [gancho(g), g["origen"], g["historia"], g["uso"], g["remate"], cierre]
 
 
 def generar(indice, salida):

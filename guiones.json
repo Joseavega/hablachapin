@@ -1,6 +1,7 @@
 [
  {
   "palabra": "pisto",
+  "gancho": "Todos queremos pisto. Pero, ¿sabés de dónde viene esa palabra?",
   "origen": "Pisto viene de un viejo verbo del español, pistar, que significa machacar. Y ese verbo tiene raíz latina.",
   "historia": "En México, pisto es un trago. Pero en Guatemala, Honduras, El Salvador y Nicaragua, pisto es dinero. ¿Cómo pasó de machacar a ser dinero? Eso nadie lo ha comprobado.",
   "uso": "Hoy lo decimos a cada rato. No hay pisto. Prestame pisto. Ya me pagaron, hay pisto.",
@@ -35,6 +36,7 @@
  },
  {
   "palabra": "chapín",
+  "gancho": "¿Sabías que chapín era el nombre de un zapato?",
   "origen": "Un chapín era un zapato español de grandes plataformas, usado por mujeres de clase alta. Según la BBC, el nombre imitaba el sonido al caminar: chap, chap, chap.",
   "historia": "Ese calzado llegó con la colonia, y aquí empezaron a llamar chapines a los españoles, con cierta ironía. Después de la independencia, sus descendientes se quedaron con el nombre por orgullo.",
   "uso": "Hoy, chapín es cualquier guatemalteco orgulloso de serlo. Eso sí, lo del chap, chap, chap, nadie lo ha comprobado del todo.",
@@ -70,6 +72,7 @@
  },
  {
   "palabra": "shuco",
+  "gancho": "Si te dicen shuco, andá a bañarte. Pero, ¿de dónde viene shuco?",
   "origen": "Shuco significa sucio, pero el origen de la palabra no está claro. Y aquí viene lo bueno: también le decimos shuco al hot dog de la calle.",
   "historia": "Prensa Libre cuenta una versión. Juan Pablo Gómez, El Chino, vendía frente al Liceo Guatemala, y un estudiante soltó: no sean shucos, muchá. El nombre se quedó. Otro autor se lo atribuye a los universitarios de la San Carlos.",
   "uso": "Hay muchas versiones y ninguna definitiva. Hoy, shuco es sucio, y también es el almuerzo.",
@@ -106,6 +109,7 @@
  },
  {
   "palabra": "caite",
+  "gancho": "Tu caite tiene más historia de la que pensás.",
   "origen": "Caite viene del náhuatl cactli, que significa sandalia.",
   "historia": "Según el filólogo Hasler, el sonido ct se convirtió en it. Así, de cactli salió caite.",
   "uso": "Hoy, caite es esa sandalia comodísima que no cambiás por nada.",
@@ -135,6 +139,7 @@
  },
  {
   "palabra": "chumpa",
+  "gancho": "La chumpa que te pide tu mamá vino de muy lejos.",
   "origen": "Chumpa viene del inglés jumper.",
   "historia": "Es un préstamo: agarramos jumper y lo dejamos en chumpa. El diccionario la registra en Guatemala, El Salvador, Honduras y Nicaragua, como una chaqueta corta.",
   "uso": "Hoy es la frase oficial de toda mamá: llevá chumpa, que va a hacer frío.",
@@ -164,6 +169,7 @@
  },
  {
   "palabra": "patojo",
+  "gancho": "Si te dicen patojo, te están diciendo algo de pato.",
   "origen": "Patojo viene de pato. Era quien caminaba balanceándose, como el ave.",
   "historia": "En Guatemala y Honduras terminó significando niño o muchacho. ¿Cómo pasó de pato a niño? Eso nadie lo ha comprobado. Nuestra teoría: mirá caminar a un niño de un año.",
   "uso": "Hoy le decimos patojo a cualquier niño o muchacho.",
@@ -194,6 +200,7 @@
  },
  {
   "palabra": "canche",
+  "gancho": "¿Por qué le decimos canche al rubio? Agarrate.",
   "origen": "Nadie sabe con certeza de dónde viene canche.",
   "historia": "Una teoría la liga al maya: canché, madera amarilla. Otra habla de cielo y árbol en quiché. Son teorías, no hechos. Y hay quien cree que el apodo nació al ver el pelo de los europeos.",
   "uso": "Hoy, canche es la persona rubia, y también un apodo de cariño.",
@@ -227,6 +234,7 @@
  },
  {
   "palabra": "chucho",
+  "gancho": "¿Por qué le decimos chucho al perro?",
   "origen": "El origen exacto de chucho no está establecido.",
   "historia": "La teoría principal lo relaciona con voces del náhuatl, como chichi, que servían para llamar a los perros. Pero no hay una prueba única.",
   "uso": "Hoy, chucho es perro. Y también le decimos así al tacaño.",
@@ -257,6 +265,7 @@
  },
  {
   "palabra": "cuate",
+  "gancho": "Tu cuate podría ser tu mellizo. O una serpiente.",
   "origen": "Cuate viene del náhuatl coatl.",
   "historia": "Esa palabra significaba serpiente, y también mellizo. De ahí saltó a lo que conocemos: el camarada, el amigo íntimo.",
   "uso": "Hoy se usa en Guatemala, El Salvador, Honduras y México.",
@@ -291,6 +300,7 @@
  },
  {
   "palabra": "chompipe",
+  "gancho": "Nos comemos un chompipe cada diciembre, y nadie sabe de dónde viene el nombre.",
   "origen": "Chompipe es el pavo, y su origen exacto no está confirmado.",
   "historia": "El filólogo Hasler propuso una posible raíz relacionada con el pipil, pero sin darla por segura. Y a finales del siglo diecinueve, el colombiano Leonardo Tascón anotó que en Guatemala se decía chumpepe.",
   "uso": "Hoy es el protagonista de la mesa en diciembre.",
@@ -321,6 +331,7 @@
  },
  {
   "palabra": "chamba",
+  "gancho": "Lo que te contaron de la palabra chamba probablemente no es cierto.",
   "origen": "Chamba es trabajo, y según la Real Academia viene de la misma palabra que significaba chiripa, o sea, un golpe de suerte.",
   "historia": "Seguro has oído que viene del inglés chamber, por los trabajadores que pedían empleo en la Cámara de Comercio de Estados Unidos. Pero Wiktionary la anota como etimología popular. Para la Academia, chamba era la suerte, y de ahí pasó a ser el trabajo.",
   "uso": "Hoy la decimos en Guatemala, México, Perú y media América. Mañana empiezo en la chamba nueva.",
@@ -353,6 +364,7 @@
  },
  {
   "palabra": "guaro",
+  "gancho": "El guaro empezó siendo un jugo. En serio.",
   "origen": "Guaro es el aguardiente de caña, y según la Real Academia tiene la misma raíz que guarapo.",
   "historia": "Guarapo es el jugo de la caña de azúcar, y se cree que viene del quechua warapu. De ese jugo se destila el trago fuerte, y por eso los dos nombres quedaron emparentados.",
   "uso": "Hoy, guaro es el aguardiente, y también cualquier trago. Se dice en Guatemala y en casi toda Centroamérica.",
@@ -384,6 +396,7 @@
  },
  {
   "palabra": "púchica",
+  "gancho": "Púchica: la grosería que hasta tu abuela dice.",
   "origen": "Púchica es la forma educada de decir otra palabra que empieza con pe, y que tu abuela no te deja decir.",
   "historia": "Wiktionary la registra como un eufemismo de esa palabrota. La gracia está en cambiarle el final: sigue sonando fuerte, pero ya no ofende. ¿Quién la dijo primero? Eso nadie lo ha comprobado.",
   "uso": "Hoy sirve para todo: sorpresa, enojo o miedo. ¡Púchica, qué susto!",
@@ -416,6 +429,7 @@
  },
  {
   "palabra": "chela",
+  "gancho": "Cuando pedís una chela, en realidad estás pidiendo algo azul.",
   "origen": "Chela viene del maya yucateco chel, que significaba azul.",
   "historia": "Según el Centro Virtual Cervantes, en Yucatán le decían chel a la gente de pelo rubio y ojos azules. Con el tiempo, la palabra se regó por México y terminó nombrando a la cerveza, probablemente por su color rubio.",
   "uso": "Hoy se dice en México, El Salvador, Perú, Chile, y aquí en Guate también. Vamos por unas chelas.",
@@ -447,6 +461,7 @@
  },
  {
   "palabra": "muchá",
+  "gancho": "Muchá, esta palabra está incompleta.",
   "origen": "Muchá es muchachos, pero recortado.",
   "historia": "Lo más probable es que sea una forma cortita de muchachos. Pero muchá no es solo decir ustedes. Lleva cariño, confianza y sentido de grupo. Con muchá llamás a tu gente.",
   "uso": "Hoy así empieza todo grupo de chat. ¿Qué onda, muchá?",
@@ -480,6 +495,7 @@
  },
  {
   "palabra": "¡aguas!",
+  "gancho": "¿Por qué gritamos ¡aguas! cuando hay peligro?",
   "origen": "¡Aguas! es la advertencia chapina por excelencia, y la teoría más famosa nos lleva a la época colonial.",
   "historia": "Cuentan que no había drenajes, y la gente tiraba el agua sucia por la ventana. Antes de tirarla, gritaba para que el que pasaba se apartara. Así lo cuentan México Desconocido y El Siglo de Torreón. Eso sí, nadie lo ha comprobado del todo.",
   "uso": "Hoy la gritamos ante cualquier peligro. ¡Aguas con el hoyo!",
@@ -513,6 +529,7 @@
  },
  {
   "palabra": "camioneta",
+  "gancho": "En Guate, la camioneta no es lo que pensás.",
   "origen": "Camioneta viene de camión, y camión viene del francés camion.",
   "historia": "Y ni los franceses saben bien de dónde salió: hay quien lo liga a camino, y hay quien lo liga a una palabra griega para una máquina de arrastrar. En Guatemala, la camioneta es el bus extraurbano, casi siempre un viejo bus escolar de Norteamérica, bien pintado.",
   "uso": "Por eso, si un extranjero te ofrece jalón en su camioneta, no esperés asientos de colores ni un brocha gritando la ruta.",
@@ -542,6 +559,7 @@
  },
  {
   "palabra": "bochinche",
+  "gancho": "¿Qué tiene que ver un bochinche con tu boca?",
   "origen": "Bochinche es un alboroto, y la explicación más repetida lo relaciona con buche.",
   "historia": "Según la revista Billiken, viene de bochincho, un sorbo o trago de líquido, que a su vez sale de buche. ¿Cómo pasó de un trago a un pleito? Eso nadie lo ha comprobado. Nuestra teoría: empezó con un trago y terminó en bochinche.",
   "uso": "Hoy, bochinche es desorden o pelea. Se armó un gran bochinche en la fiesta.",
@@ -575,6 +593,7 @@
  },
  {
   "palabra": "boquitas",
+  "gancho": "¿Por qué les decimos boquitas a las boquitas?",
   "origen": "Boquitas viene de boca, en chiquito. O sea, lo que cabe en un bocado.",
   "historia": "El historiador Luis Villar Anleu lo explica en Prensa Libre: así se llaman los bocadillos que se sirven en los cócteles. Y en Guatemala, una reunión sin boquitas no es reunión.",
   "uso": "Hoy son el guacamol, los frijolitos, las papalinas. Traé boquitas para la reunión.",
