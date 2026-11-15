@@ -604,5 +604,312 @@
     "hotdog"
    ]
   }
+ },
+ {
+  "palabra": "dar jalón",
+  "origen": "Jalón viene de jalar, que es tirar de algo. Y jalar llegó del habla de los marineros.",
+  "historia": "Según la Real Academia, viene del francés haler: tirar de una cuerda para mover un barco. De los puertos pasó a la calle. Y en Guatemala, El Salvador y Honduras, dar jalón terminó siendo llevar a alguien en tu carro.",
+  "uso": "Hoy es el favor más pedido del chapín. ¿Me das jalón a la casa?",
+  "remate": "Los marineros jalaban barcos con cuerdas. Nosotros jalamos al cuate que no tiene carro.",
+  "fuentes": "DLE; Tesoro de los diccionarios históricos (RAE)",
+  "destacar": [
+   "jalar",
+   "marineros",
+   "francés",
+   "barco",
+   "carro"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "barco"
+   ],
+   "historia": [
+    "libro",
+    "barco",
+    "bandera"
+   ],
+   "uso": [
+    "mellizas",
+    "mellizas"
+   ],
+   "remate": [
+    "barco",
+    "mellizas"
+   ]
+  }
+ },
+ {
+  "palabra": "cargar con los tanates",
+  "origen": "Tanate viene del náhuatl tanatli: una canasta tejida de palma.",
+  "historia": "Así lo registran el Gran Diccionario Náhuatl y el lingüista Mario Portilla. En documentos antiguos, el tanatli servía para guardar cosas y hasta para medir maíz. Con el tiempo, tanate pasó a ser cualquier bulto o lío de cosas.",
+  "uso": "Por eso, cargar con los tanates es mudarse o irse de un lugar. Cargó con sus tanates y se fue.",
+  "remate": "Antes era una canasta de palma. Ahora son tres bolsas del supermercado y una caja de zapatos.",
+  "fuentes": "Gran Diccionario Náhuatl; Portilla; DLE",
+  "destacar": [
+   "náhuatl",
+   "canasta",
+   "palma",
+   "maíz",
+   "bulto",
+   "mudarse"
+  ],
+  "ilus": {
+   "origen": [
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "libro",
+    "cartera"
+   ],
+   "uso": [
+    "cartera",
+    "cartera"
+   ],
+   "remate": [
+    "cartera",
+    "zapato"
+   ]
+  }
+ },
+ {
+  "palabra": "chunche",
+  "origen": "Nadie sabe con certeza de dónde viene chunche. Hay varias teorías.",
+  "historia": "En mil novecientos quince, Carlos Gallini propuso que venía del quechua chunchulli, que son tripas. Otra historia, contada en Costa Rica, dice que nació de trabajadores chinos que señalaban cosas. Pero ninguna está comprobada.",
+  "uso": "Hoy, chunche es cualquier cosa cuyo nombre no recordás. Pasame ese chunche de allá.",
+  "remate": "Una palabra de origen desconocido, para nombrar cosas de nombre desconocido. Tiene sentido.",
+  "fuentes": "Gallini; La Revista (Costa Rica); DLE",
+  "destacar": [
+   "teorías",
+   "quechua",
+   "tripas",
+   "chinos",
+   "comprobada",
+   "desconocido"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa",
+    "lupa"
+   ],
+   "historia": [
+    "libro",
+    "barco",
+    "lupa"
+   ],
+   "uso": [
+    "mortero",
+    "mortero"
+   ],
+   "remate": [
+    "lupa",
+    "mortero"
+   ]
+  }
+ },
+ {
+  "palabra": "güisquil",
+  "origen": "Güisquil viene del náhuat, la lengua de los pipiles de Centroamérica.",
+  "historia": "Una propuesta de estudiosos del náhuatl dice que sale de witskilit. Wits es espina, y kilit, una hierba comestible. O sea, la verdura con espinas. Y si alguna vez agarraste uno peludo, ya sabés por qué.",
+  "uso": "En México le dicen chayote. Aquí es güisquil, y no falta en el caldo.",
+  "remate": "Una verdura con espinas, que nadie pide, pero que siempre aparece en el caldo de la abuela.",
+  "fuentes": "Lemus, ECA; lista Nahuat-l",
+  "destacar": [
+   "náhuat",
+   "pipiles",
+   "espina",
+   "espinas",
+   "caldo"
+  ],
+  "ilus": {
+   "origen": [
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "arbol",
+    "arbol",
+    "lupa"
+   ],
+   "uso": [
+    "bandera",
+    "mortero"
+   ],
+   "remate": [
+    "mortero"
+   ]
+  }
+ },
+ {
+  "palabra": "babosada",
+  "origen": "Babosada viene de baboso. Y baboso viene de baba.",
+  "historia": "Según Wiktionary, baba viene del lenguaje de los bebés, de cuando todavía babean. Con el tiempo, baboso pasó a ser el tonto. Y babosada, lo que dice o hace el baboso.",
+  "uso": "El Diccionario de americanismos la registra como bobería o disparate. Ya no digás babosadas.",
+  "remate": "Así que cada vez que decís una babosada, estás hablando como bebé.",
+  "fuentes": "Wiktionary; DAMER",
+  "destacar": [
+   "baba",
+   "bebés",
+   "tonto",
+   "disparate",
+   "bebé"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "pizarra",
+    "pizarra"
+   ],
+   "uso": [
+    "libro",
+    "pizarra"
+   ],
+   "remate": [
+    "pizarra"
+   ]
+  }
+ },
+ {
+  "palabra": "shute",
+  "origen": "El origen de shute, el metido, no está comprobado.",
+  "historia": "Wiktionary registra shute también como un árbol y su fruta, en palabra tomada de una lengua maya. Y en Guatemala, shute es además el aguijón. ¿Cómo llegó a ser el entrometido? Eso nadie lo ha comprobado. Nuestra teoría: se mete donde no lo llaman, como un aguijón.",
+  "uso": "Hoy, el shute es el que se mete en todo. No seas shute.",
+  "remate": "Todos tenemos un shute en la familia. Y si no sabés quién es, a lo mejor sos vos.",
+  "fuentes": "Wiktionary; DAMER",
+  "destacar": [
+   "maya",
+   "aguijón",
+   "entrometido",
+   "nadie",
+   "familia"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa"
+   ],
+   "historia": [
+    "arbol",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "lupa",
+    "lupa"
+   ],
+   "remate": [
+    "mellizas",
+    "mellizas"
+   ]
+  }
+ },
+ {
+  "palabra": "chilero",
+  "origen": "Chilero es de las palabras más chapinas que hay. Pero su origen no está documentado.",
+  "historia": "El Diccionario de la lengua española y el de americanismos la registran como bonito o muy bueno, en Guatemala. Pero ninguno dice de dónde viene. ¿Tendrá que ver con el chile? Eso nadie lo ha comprobado.",
+  "uso": "Hoy, chilero es lo bonito, lo elegante, lo que está bien bueno. ¡Qué chilera tu chumpa!",
+  "remate": "Nadie sabe de dónde viene. Pero hay que admitirlo: la palabra está bien chilera.",
+  "fuentes": "DLE; DAMER; Wiktionary",
+  "destacar": [
+   "chapinas",
+   "bonito",
+   "chile",
+   "nadie",
+   "elegante"
+  ],
+  "ilus": {
+   "origen": [
+    "bandera",
+    "lupa"
+   ],
+   "historia": [
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "chumpa",
+    "chumpa"
+   ],
+   "remate": [
+    "lupa",
+    "chumpa"
+   ]
+  }
+ },
+ {
+  "palabra": "chispudo",
+  "origen": "Chispudo viene de chispa. Y según la Real Academia, chispa nació de imitar un sonido.",
+  "historia": "Es el sonido de la chispa que salta del fuego. Con el tiempo, en América, ser chispa pasó a ser listo. Y el Diccionario de americanismos registra chispudo en Guatemala y El Salvador: el vivaracho, sobre todo para los negocios.",
+  "uso": "Esa patoja es bien chispuda. Vende hasta hielo en diciembre.",
+  "remate": "Así que si sos chispudo, tenés fuego en la cabeza. Ojalá en el cerebro y no en el pelo.",
+  "fuentes": "Diccionario histórico (RAE); DAMER",
+  "destacar": [
+   "chispa",
+   "sonido",
+   "fuego",
+   "listo",
+   "negocios"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "lupa",
+    "libro",
+    "billetes"
+   ],
+   "uso": [
+    "billetes",
+    "moneda"
+   ],
+   "remate": [
+    "tinte",
+    "tinte"
+   ]
+  }
+ },
+ {
+  "palabra": "traído",
+  "origen": "Traído viene de traer. Así de sencillo.",
+  "historia": "El Diccionario de americanismos registra traído y traída como novio y novia en Guatemala. ¿Por qué traer? Eso no está documentado. Nuestra teoría: es la persona que traés a la casa para presentarla a la familia.",
+  "uso": "Se usa cuando ya es casi oficial. Mañana me presenta a su traída.",
+  "remate": "Primero es el traído. Después, es el que trae el chompipe en diciembre.",
+  "fuentes": "DAMER",
+  "destacar": [
+   "traer",
+   "novio",
+   "novia",
+   "familia",
+   "oficial"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "lupa",
+    "mellizas"
+   ],
+   "uso": [
+    "mellizas",
+    "copa"
+   ],
+   "remate": [
+    "mellizas",
+    "pavo"
+   ]
+  }
  }
 ]
