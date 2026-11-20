@@ -384,32 +384,38 @@
  },
  {
   "palabra": "púchica",
-  "origen": "Púchica es la forma educada de decir otra palabra que empieza con pe, y que tu abuela no te deja decir.",
-  "historia": "Wiktionary la registra como un eufemismo de esa palabrota. La gracia está en cambiarle el final: sigue sonando fuerte, pero ya no ofende. ¿Quién la dijo primero? Eso nadie lo ha comprobado.",
-  "uso": "Hoy sirve para todo: sorpresa, enojo o miedo. ¡Púchica, qué susto!",
-  "remate": "Es la grosería más decente del mundo. Hasta tu abuela la dice, y nadie la regaña.",
-  "fuentes": "Wiktionary",
+  "origen": "Púchica es una palabrota disfrazada. Viene de otra que empieza con pe, y que aquí no podemos decir.",
+  "historia": "La gramática de la Real Academia lo explica como una cadena. Primero, la palabrota se suavizó a pucha. De pucha salió púchica. Y el último disfraz es hijuepúchica. ¿Quién la dijo primero? Eso nadie lo sabe.",
+  "uso": "Hoy sirve para todo: sorpresa, enojo, susto o admiración. ¡Púchica, qué susto! ¡Púchica, qué bonito!",
+  "remate": "Así que la próxima vez que tu abuela diga púchica, ya sabés lo que de verdad está diciendo.",
+  "fuentes": "Gramática de la RAE; Esteban Fernández, Hesperia",
   "destacar": [
-   "eufemismo",
-   "palabrota",
-   "abuela",
-   "susto"
+   "disfrazada",
+   "pucha",
+   "gramática",
+   "hijuepúchica",
+   "susto",
+   "abuela"
   ],
   "ilus": {
    "origen": [
+    "lupa",
     "libro"
    ],
    "historia": [
     "libro",
-    "pizarra",
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa",
     "lupa"
    ],
    "uso": [
     "lupa",
+    "lupa",
     "lupa"
    ],
    "remate": [
-    "libro",
     "libro"
    ]
   }
