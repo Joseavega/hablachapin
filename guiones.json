@@ -383,54 +383,18 @@
   }
  },
  {
-  "palabra": "púchica",
-  "origen": "Púchica es una palabrota disfrazada. Viene de otra que empieza con pe, y que aquí no podemos decir.",
-  "historia": "La gramática de la Real Academia lo explica como una cadena. Primero, la palabrota se suavizó a pucha. De pucha salió púchica. Y el último disfraz es hijuepúchica. ¿Quién la dijo primero? Eso nadie lo sabe.",
-  "uso": "Hoy sirve para todo: sorpresa, enojo, susto o admiración. ¡Púchica, qué susto! ¡Púchica, qué bonito!",
-  "remate": "Así que la próxima vez que tu abuela diga púchica, ya sabés lo que de verdad está diciendo.",
-  "fuentes": "Gramática de la RAE; Esteban Fernández, Hesperia",
-  "destacar": [
-   "disfrazada",
-   "pucha",
-   "gramática",
-   "hijuepúchica",
-   "susto",
-   "abuela"
-  ],
-  "ilus": {
-   "origen": [
-    "lupa",
-    "libro"
-   ],
-   "historia": [
-    "libro",
-    "libro",
-    "lupa",
-    "lupa",
-    "lupa",
-    "lupa"
-   ],
-   "uso": [
-    "lupa",
-    "lupa",
-    "lupa"
-   ],
-   "remate": [
-    "libro"
-   ]
-  }
- },
- {
   "palabra": "chela",
-  "origen": "Chela viene del maya yucateco chel, que significaba azul.",
-  "historia": "Según el Centro Virtual Cervantes, en Yucatán le decían chel a la gente de pelo rubio y ojos azules. Con el tiempo, la palabra se regó por México y terminó nombrando a la cerveza, probablemente por su color rubio.",
-  "uso": "Hoy se dice en México, El Salvador, Perú, Chile, y aquí en Guate también. Vamos por unas chelas.",
-  "remate": "O sea que pedir una chela es pedir una azul. Y al final, igual terminás pidiendo otra.",
-  "fuentes": "Centro Virtual Cervantes en Uno TV; Wiktionary",
+  "origen": "Chela viene del maya de Yucatán.",
+  "historia": "Wiktionary la deriva del maya chel. La investigadora Esther Hernández explica que en maya, chel era la persona de pelo rubio. De ahí viene también chele, el güero de Centroamérica. Ojo: la Real Academia dice que chele venía del náhuatl. Hay pleito. ¿Y la cerveza? Le habrían dicho chela por su color rubio. Pero ese salto nadie lo ha comprobado.",
+  "uso": "Hoy se pide chela en México, El Salvador, Perú, Chile, y aquí también. ¿Vamos por unas chelas?",
+  "remate": "O sea que pedir una chela es pedir una rubia. Y ya sabemos que con una no basta.",
+  "fuentes": "Wiktionary; Esther Hernández, Lexis",
   "destacar": [
    "maya",
-   "azul",
    "rubio",
+   "chele",
+   "náhuatl",
+   "pleito",
    "cerveza"
   ],
   "ilus": {
@@ -438,11 +402,17 @@
     "libro"
    ],
    "historia": [
+    "libro",
+    "libro",
+    "tinte",
     "lupa",
-    "copa"
+    "lupa",
+    "copa",
+    "copa",
+    "lupa"
    ],
    "uso": [
-    "copa",
+    "bandera",
     "copa"
    ],
    "remate": [
@@ -915,6 +885,44 @@
    "remate": [
     "mellizas",
     "pavo"
+   ]
+  }
+ },
+ {
+  "palabra": "púchica",
+  "origen": "Púchica es una palabrota disfrazada. Viene de otra que empieza con pe, y que aquí no podemos decir.",
+  "historia": "La gramática de la Real Academia lo explica como una cadena. Primero, la palabrota se suavizó a pucha. De pucha salió púchica. Y el último disfraz es hijuepúchica. ¿Quién la dijo primero? Eso nadie lo sabe.",
+  "uso": "Hoy sirve para todo: sorpresa, enojo, susto o admiración. ¡Púchica, qué susto! ¡Púchica, qué bonito!",
+  "remate": "Así que la próxima vez que tu abuela diga púchica, ya sabés lo que de verdad está diciendo.",
+  "fuentes": "Gramática de la RAE; Esteban Fernández, Hesperia",
+  "destacar": [
+   "disfrazada",
+   "pucha",
+   "gramática",
+   "hijuepúchica",
+   "susto",
+   "abuela"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "remate": [
+    "libro"
    ]
   }
  }
