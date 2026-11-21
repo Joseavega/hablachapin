@@ -423,34 +423,38 @@
  },
  {
   "palabra": "muchá",
-  "origen": "Muchá es muchachos, pero recortado.",
-  "historia": "Lo más probable es que sea una forma cortita de muchachos. Pero muchá no es solo decir ustedes. Lleva cariño, confianza y sentido de grupo. Con muchá llamás a tu gente.",
-  "uso": "Hoy así empieza todo grupo de chat. ¿Qué onda, muchá?",
-  "remate": "Le cortamos media palabra a muchachos, porque el chapín tiene prisa para todo. Menos para llegar a tiempo.",
-  "fuentes": "Insider Spanish",
+  "origen": "Lo más probable es que muchá sea muchachos, pero recortado.",
+  "historia": "Y muchacho tiene su propio misterio. Antes se decía mochacho. Wiktionary lo saca de mozo. Merriam-Webster dice que probablemente viene de mocho: el de pelo cortado. Y la Real Academia dice que el origen de mocho es incierto.",
+  "uso": "El Diccionario de americanismos la registra como trato entre gente de confianza, en Guatemala, Honduras y El Salvador. ¿Qué onda, muchá?",
+  "remate": "O sea que muchá es una palabra cortada, que a lo mejor viene de otra que significaba cortado. El chapín no inventó el recorte. Solo lo perfeccionó.",
+  "fuentes": "Wiktionary; Merriam-Webster; Diccionario histórico (RAE); DAMER",
   "destacar": [
    "muchachos",
    "recortado",
-   "confianza",
-   "grupo"
+   "mochacho",
+   "mozo",
+   "mocho",
+   "confianza"
   ],
   "ilus": {
    "origen": [
-    "pizarra"
+    "mellizas"
    ],
    "historia": [
     "lupa",
-    "mellizas",
-    "mellizas",
-    "mellizas"
+    "libro",
+    "libro",
+    "libro",
+    "lupa"
    ],
    "uso": [
-    "mellizas",
+    "libro",
     "mellizas"
    ],
    "remate": [
-    "zapato",
-    "zapato"
+    "lupa",
+    "mellizas",
+    "mellizas"
    ]
   }
  },
