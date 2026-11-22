@@ -460,34 +460,37 @@
  },
  {
   "palabra": "¡aguas!",
-  "origen": "¡Aguas! es la advertencia chapina por excelencia, y la teoría más famosa nos lleva a la época colonial.",
-  "historia": "Cuentan que no había drenajes, y la gente tiraba el agua sucia por la ventana. Antes de tirarla, gritaba para que el que pasaba se apartara. Así lo cuentan México Desconocido y El Siglo de Torreón. Eso sí, nadie lo ha comprobado del todo.",
-  "uso": "Hoy la gritamos ante cualquier peligro. ¡Aguas con el hoyo!",
-  "remate": "Si la teoría es cierta, mejor que nos gritaran. Porque lo que caía de la ventana no era agua bendita.",
-  "fuentes": "México Desconocido; El Siglo de Torreón",
+  "origen": "La teoría más famosa dice que ¡aguas! viene de un grito más viejo: ¡agua va!",
+  "historia": "En las ciudades españolas no había drenajes, y la gente tiraba el agua sucia por la ventana. Antes de tirarla, gritaba ¡agua va! Eso sí está documentado: aparece en un libro de refranes de mil seiscientos veintisiete. Lo que nadie ha comprobado es que de ahí salió nuestro ¡aguas!",
+  "uso": "El Diccionario de americanismos la registra en México, Guatemala y El Salvador, como advertencia ante un peligro. ¡Aguas con el hoyo!",
+  "remate": "Si la teoría es cierta, qué bueno que gritaban. Porque lo que caía de la ventana no era agua bendita.",
+  "fuentes": "Correas, Vocabulario de refranes; Ortega Morán, Cápsulas de lengua; DAMER",
   "destacar": [
-   "advertencia",
-   "colonial",
+   "grito",
    "ventana",
+   "documentado",
+   "refranes",
+   "comprobado",
    "peligro"
   ],
   "ilus": {
    "origen": [
-    "libro"
+    "lupa",
+    "lupa"
    ],
    "historia": [
-    "pizarra",
-    "pizarra",
+    "libro",
+    "libro",
     "libro",
     "lupa"
    ],
    "uso": [
-    "lupa",
-    "lupa"
+    "libro",
+    "bandera"
    ],
    "remate": [
-    "pizarra",
-    "pizarra"
+    "lupa",
+    "lupa"
    ]
   }
  },
