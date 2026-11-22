@@ -932,5 +932,352 @@
     "libro"
    ]
   }
+ },
+ {
+  "palabra": "chiche",
+  "origen": "Chiche viene del náhuatl chichi, que significa teta. Así como lo oís.",
+  "historia": "El lingüista Mario Portilla lo registra así, y Wiktionary también. Por eso, en varios países, chiche todavía es el pecho de una mujer. Pero ¿cómo pasó de teta a fácil? Eso nadie lo ha comprobado.",
+  "uso": "En Guate, chiche es fácil. El examen estuvo chiche.",
+  "remate": "Así que la próxima vez que digás que el examen estuvo chiche, mejor no le expliqués a la maestra de dónde viene.",
+  "fuentes": "Portilla, Revista de Filología UCR; Wiktionary",
+  "destacar": [
+   "náhuatl",
+   "teta",
+   "pecho",
+   "fácil",
+   "maestra"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "pizarra",
+    "pizarra"
+   ],
+   "remate": [
+    "pizarra",
+    "pizarra",
+    "pizarra",
+    "pizarra"
+   ]
+  }
+ },
+ {
+  "palabra": "chafa",
+  "origen": "El origen de chafa no está comprobado. Pero hay una pista.",
+  "historia": "El lingüista mexicano Guido Gómez de Silva dice que probablemente viene del verbo chafar, que es aplastar o echar a perder. Y según Wiktionary, chafar imita un sonido: el de algo que se aplasta. ¡Chaf!",
+  "uso": "El diccionario de la Real Academia la marca para México y Nicaragua. Pero aquí también la usamos: ese celular está bien chafa.",
+  "remate": "Así que lo chafa no es nuevo. Ya venía aplastado desde el diccionario.",
+  "fuentes": "Gómez de Silva, Diccionario breve de mexicanismos; Wiktionary; DLE",
+  "destacar": [
+   "pista",
+   "chafar",
+   "aplastar",
+   "sonido",
+   "celular"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa",
+    "lupa"
+   ],
+   "historia": [
+    "libro",
+    "mortero",
+    "mortero",
+    "mortero",
+    "mortero",
+    "mortero"
+   ],
+   "uso": [
+    "bandera",
+    "libro",
+    "libro",
+    "libro"
+   ],
+   "remate": [
+    "mortero",
+    "mortero"
+   ]
+  }
+ },
+ {
+  "palabra": "clavo",
+  "origen": "Clavo viene del latín clavus, que es exactamente eso: un clavo.",
+  "historia": "En español ya aparece desde el siglo doce. Y desde hace mucho, clavo también es un dolor de cabeza. Según el Diccionario de americanismos, clavo es un problema difícil de resolver. Y en Guatemala, además, algo que da vergüenza.",
+  "uso": "¡Qué clavo! Me saludó, y yo no me acordaba de su nombre.",
+  "remate": "Como un clavo de verdad: cuesta sacarlo, y duele.",
+  "fuentes": "Wiktionary; DAMER",
+  "destacar": [
+   "latín",
+   "siglo",
+   "cabeza",
+   "problema",
+   "vergüenza",
+   "duele"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "mellizas",
+    "mellizas"
+   ],
+   "remate": [
+    "lupa",
+    "lupa"
+   ]
+  }
+ },
+ {
+  "palabra": "pilas",
+  "origen": "Pilas viene de las pilas de toda la vida: las baterías.",
+  "historia": "Wiktionary explica que ponerse las pilas es, literalmente, ponerse las baterías. Como un juguete que estaba apagado, y de repente arranca. De ahí salió el chapín pilas. El Diccionario de americanismos lo registra como avispado e inteligente.",
+  "uso": "Ese patojo es bien pilas, aprende todo rápido.",
+  "remate": "Así que si te dicen que sos pilas, es un cumplido. Por lo menos, no te dijeron que andás descargado.",
+  "fuentes": "Wiktionary; DAMER",
+  "destacar": [
+   "baterías",
+   "juguete",
+   "arranca",
+   "avispado",
+   "descargado"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "pizarra",
+    "pizarra",
+    "pizarra",
+    "pizarra",
+    "pizarra",
+    "pizarra"
+   ],
+   "uso": [
+    "pizarra"
+   ],
+   "remate": [
+    "pizarra",
+    "pizarra",
+    "pizarra",
+    "pizarra"
+   ]
+  }
+ },
+ {
+  "palabra": "güiro",
+  "origen": "Nadie sabe con certeza de dónde viene güiro, el niño. Pero hay una pista.",
+  "historia": "Existe otro güiro: una planta con un fruto parecido a la calabaza. Según el Diccionario de americanismos, esa palabra viene de una lengua indígena de las Antillas. Con ese fruto seco se hace un instrumento musical. ¿Es la misma palabra que güiro, el patojo? Eso nadie lo ha comprobado.",
+  "uso": "¿Y esos güiros de quién son? Vienen con la tía.",
+  "remate": "Así que si tenés güiros en tu casa, ya sabés: hacen tanto ruido como el instrumento.",
+  "fuentes": "DAMER; Wiktionary",
+  "destacar": [
+   "pista",
+   "calabaza",
+   "Antillas",
+   "instrumento",
+   "ruido"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "historia": [
+    "arbol",
+    "barco",
+    "arbol",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "mellizas",
+    "mellizas"
+   ],
+   "remate": [
+    "mellizas",
+    "mellizas"
+   ]
+  }
+ },
+ {
+  "palabra": "bolo",
+  "origen": "El origen de bolo, el borracho, no está comprobado.",
+  "historia": "Wiktionary lo pone junto al bolo de boliche, que viene del latín bolus, una bola. Nuestra teoría: el bolo se tambalea como un pino de boliche. Pero eso nadie lo ha comprobado.",
+  "uso": "Los diccionarios lo registran como ebrio, y aquí lo usamos todos. Salió bien bolo de la fiesta.",
+  "remate": "Lo que sí está comprobado es que al día siguiente, el bolo amanece con goma.",
+  "fuentes": "Wiktionary; DLE",
+  "destacar": [
+   "borracho",
+   "latín",
+   "bola",
+   "tambalea",
+   "goma"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa",
+    "lupa"
+   ],
+   "historia": [
+    "libro",
+    "copa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "libro",
+    "copa",
+    "copa"
+   ],
+   "remate": [
+    "copa",
+    "copa"
+   ]
+  }
+ },
+ {
+  "palabra": "salado",
+  "origen": "Salado viene de sal, que viene del latín sal.",
+  "historia": "Lo raro es cómo lo salado pasó a ser la mala suerte. La sal anda metida en muchas supersticiones, y hay varias teorías. Pero nadie ha comprobado cuál es la buena.",
+  "uso": "El Diccionario de americanismos registra salado como el que tiene mala suerte. ¡Qué salado! Se me fue la camioneta.",
+  "remate": "Así que si sos salado, no es tu culpa. Es culpa de la sal.",
+  "fuentes": "DAMER; Inklingo; Buenospanish",
+  "destacar": [
+   "latín",
+   "suerte",
+   "supersticiones",
+   "teorías",
+   "culpa"
+  ],
+  "ilus": {
+   "origen": [
+    "libro"
+   ],
+   "historia": [
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "remate": [
+    "mortero",
+    "mortero"
+   ]
+  }
+ },
+ {
+  "palabra": "jocote",
+  "origen": "Jocote viene del náhuatl xocotl.",
+  "historia": "En el vocabulario de fray Alonso de Molina, de mil quinientos setenta y uno, xocotl significa simplemente fruta. Y la lingüista Frances Karttunen explica que casi todo lo que sale de xocotl tiene que ver con lo agrio y lo verde. O sea, el jocote es la fruta agria.",
+  "uso": "Y no hay chapín que no se haya comido un jocote con sal y limón.",
+  "remate": "Así que cuando pedís jocotes, estás pidiendo, literalmente, frutas. Como si no hubiera otras.",
+  "fuentes": "Molina, 1571; Karttunen; Gran Diccionario Náhuatl en línea; Merriam-Webster",
+  "destacar": [
+   "náhuatl",
+   "Molina",
+   "fruta",
+   "agrio",
+   "limón"
+  ],
+  "ilus": {
+   "origen": [
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "arbol",
+    "libro",
+    "arbol",
+    "arbol",
+    "arbol",
+    "arbol"
+   ],
+   "uso": [
+    "mortero",
+    "mortero"
+   ],
+   "remate": [
+    "arbol",
+    "arbol",
+    "arbol"
+   ]
+  }
+ },
+ {
+  "palabra": "chirís",
+  "origen": "Nadie sabe con certeza de dónde viene chirís.",
+  "historia": "El Diccionario de la lengua española la registra como niño, y solo para Guatemala. O sea, es nuestra. Pero de dónde salió, no lo dice. Y nadie lo ha comprobado.",
+  "uso": "Chirís es el niño pequeño. ¿Y ese chirís de quién es?",
+  "remate": "Como los chirises de las fiestas: aparecen por todos lados, y nadie sabe de quién son.",
+  "fuentes": "DLE; Living in Guatemala",
+  "destacar": [
+   "certeza",
+   "niño",
+   "Guatemala",
+   "nuestra",
+   "fiestas"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa"
+   ],
+   "historia": [
+    "libro",
+    "bandera",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "mellizas",
+    "mellizas"
+   ],
+   "remate": [
+    "mellizas",
+    "mellizas",
+    "mellizas"
+   ]
+  }
  }
 ]
