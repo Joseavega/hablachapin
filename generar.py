@@ -134,11 +134,7 @@ class Plan:
         destacar = {limpia(w) for w in g.get("destacar", [])} | {limpia(g["palabra"])}
         self.frases, self.secciones = [], []
         t = 0.0
-        intro_txt = [
-            f"Día {dia} contándote de dónde vienen las palabras que todos usamos en Guate,",
-            "hasta llegar a 1 millón de seguidores.",
-            f"Hoy: {g['palabra']}.",
-        ]
+        intro_txt = [f"Hoy: {g['palabra']}."]
         for i, ((clave, nombre), dur) in enumerate(zip(SECCIONES, tiempos)):
             partes = intro_txt if clave == "intro" else trozos(g[clave])
             if clave == "intro":
@@ -506,10 +502,7 @@ def preparar(indice):
     guiones = json.loads((RAIZ / "guiones.json").read_text(encoding="utf-8"))
     config = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
     g = guiones[indice]
-    intro = (
-        f"Día {numero(indice + 1)} contándote de dónde vienen las palabras que todos usamos en Guate, "
-        f"hasta llegar a un millón de seguidores. Hoy: {g['palabra']}."
-    )
+    intro = f"Hoy: {g['palabra']}."
     return g, config, [intro, g["origen"], g["historia"], g["uso"], g["remate"]]
 
 
