@@ -495,6 +495,44 @@
   }
  },
  {
+  "palabra": "púchica",
+  "origen": "Púchica es una palabrota disfrazada. Viene de otra que empieza con pe, y que aquí no podemos decir.",
+  "historia": "La gramática de la Real Academia lo explica como una cadena. Primero, la palabrota se suavizó a pucha. De pucha salió púchica. Y el último disfraz es hijuepúchica. ¿Quién la dijo primero? Eso nadie lo sabe.",
+  "uso": "Hoy sirve para todo: sorpresa, enojo, susto o admiración. ¡Púchica, qué susto! ¡Púchica, qué bonito!",
+  "remate": "Así que la próxima vez que tu abuela diga púchica, ya sabés lo que de verdad está diciendo.",
+  "fuentes": "Gramática de la RAE; Esteban Fernández, Hesperia",
+  "destacar": [
+   "disfrazada",
+   "pucha",
+   "gramática",
+   "hijuepúchica",
+   "susto",
+   "abuela"
+  ],
+  "ilus": {
+   "origen": [
+    "lupa",
+    "libro"
+   ],
+   "historia": [
+    "libro",
+    "libro",
+    "lupa",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "remate": [
+    "libro"
+   ]
+  }
+ },
+ {
   "palabra": "camioneta",
   "origen": "Camioneta viene de camión, y camión viene del francés camion.",
   "historia": "Y ni los franceses saben bien de dónde salió: hay quien lo liga a camino, y hay quien lo liga a una palabra griega para una máquina de arrastrar. En Guatemala, la camioneta es el bus extraurbano, casi siempre un viejo bus escolar de Norteamérica, bien pintado.",
@@ -892,44 +930,6 @@
    "remate": [
     "mellizas",
     "pavo"
-   ]
-  }
- },
- {
-  "palabra": "púchica",
-  "origen": "Púchica es una palabrota disfrazada. Viene de otra que empieza con pe, y que aquí no podemos decir.",
-  "historia": "La gramática de la Real Academia lo explica como una cadena. Primero, la palabrota se suavizó a pucha. De pucha salió púchica. Y el último disfraz es hijuepúchica. ¿Quién la dijo primero? Eso nadie lo sabe.",
-  "uso": "Hoy sirve para todo: sorpresa, enojo, susto o admiración. ¡Púchica, qué susto! ¡Púchica, qué bonito!",
-  "remate": "Así que la próxima vez que tu abuela diga púchica, ya sabés lo que de verdad está diciendo.",
-  "fuentes": "Gramática de la RAE; Esteban Fernández, Hesperia",
-  "destacar": [
-   "disfrazada",
-   "pucha",
-   "gramática",
-   "hijuepúchica",
-   "susto",
-   "abuela"
-  ],
-  "ilus": {
-   "origen": [
-    "lupa",
-    "libro"
-   ],
-   "historia": [
-    "libro",
-    "libro",
-    "lupa",
-    "lupa",
-    "lupa",
-    "lupa"
-   ],
-   "uso": [
-    "lupa",
-    "lupa",
-    "lupa"
-   ],
-   "remate": [
-    "libro"
    ]
   }
  },
