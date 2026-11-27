@@ -533,6 +533,48 @@
   }
  },
  {
+  "palabra": "chance",
+  "origen": "Chance llegó al español desde el inglés, o desde el francés. Y en el fondo viene del latín cadere, que significa caer.",
+  "historia": "¿Caer qué? Los dados. Según el diccionario Merriam-Webster, chance era cómo caían los dados, o sea, la suerte. De ahí pasó a ser una oportunidad. ¿Y cómo terminó siendo trabajo? Eso nadie lo ha comprobado.",
+  "uso": "Wiktionary lo registra como trabajo en Guatemala y El Salvador. ¿Ya conseguiste chance?",
+  "remate": "Así que buscar chance es como tirar los dados: nunca sabés cómo van a caer.",
+  "fuentes": "Merriam-Webster; Wiktionary",
+  "destacar": [
+   "latín",
+   "caer",
+   "dados",
+   "suerte",
+   "trabajo"
+  ],
+  "ilus": {
+   "origen": [
+    "libro",
+    "libro",
+    "libro",
+    "libro"
+   ],
+   "historia": [
+    "lupa",
+    "moneda",
+    "moneda",
+    "moneda",
+    "billetes",
+    "lupa",
+    "lupa",
+    "lupa"
+   ],
+   "uso": [
+    "libro",
+    "cartera",
+    "cartera"
+   ],
+   "remate": [
+    "moneda",
+    "moneda"
+   ]
+  }
+ },
+ {
   "palabra": "camioneta",
   "origen": "Camioneta viene de camión, y camión viene del francés camion.",
   "historia": "Y ni los franceses saben bien de dónde salió: hay quien lo liga a camino, y hay quien lo liga a una palabra griega para una máquina de arrastrar. En Guatemala, la camioneta es el bus extraurbano, casi siempre un viejo bus escolar de Norteamérica, bien pintado.",
